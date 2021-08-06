@@ -1,0 +1,122 @@
+.list-item {
+  padding: 1rem;
+  box-sizing: border-box;
+  box-shadow: 0.25rem 0.25rem 0.5rem #cdcdcd;
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (max-width: '992px') {
+    width: 50%;
+  }
+
+  @media screen and (max-width: '768px') {
+    width: 100%;
+  }
+
+  .user-info {
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (max-width: '992px') {
+      align-items: center;
+    }
+
+    section {
+      display: flex;
+      width: 100%;
+
+      @media screen and (max-width: '992px') {
+        flex-direction: column;
+      }
+
+      > div {
+        flex: 1 1 0;
+        padding: 0 0.25rem;
+
+        @media screen and (min-width: '768px') and (max-width: '992px') {
+          padding: 0 1rem;
+        }
+      }
+      .avatar {
+        margin-right: 1rem;
+        svg {
+          padding: 0.5rem;
+          border: 1px solid #cdcdcd;
+          border-radius: 3px;
+          font-size: 3rem;
+          color: #8a8a8a;
+        }
+      }
+
+      .personal-details {
+        display: flex;
+        flex-direction: row;
+
+        h3 {
+          margin: 0 0 1rem;
+        }
+      }
+
+      .address-details {
+        display: flex;
+        align-items: stretch;
+        justify-content: space-between;
+
+        address {
+          padding-right: 0.25rem;
+        }
+
+        @media screen and (max-width: '992px') {
+          margin-top: 2rem;
+
+          h4 {
+            margin-top: 0;
+          }
+        }
+      }
+
+      .field-wrapper {
+        display: flex;
+        align-items: center;
+
+        .field-name {
+          width: 6em;
+          font-size: 12px;
+          font-weight: 500;
+
+          @media screen and (min-width: '993px') and (max-width: '1024px') {
+            width: auto;
+            margin-right: 0.25rem;
+          }
+        }
+        .field-value {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  .call-button {
+    background-color: #75a1ff;
+    border: none;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    padding: 0.5rem 0;
+    cursor: pointer;
+    margin-top: 2rem;
+
+    span {
+      margin-left: 0.5rem;
+    }
+  }
+
+  &:focus {
+    background-color: #eeeeee;
+    border: none;
+    outline: none;
+  }
+}
+
+.highlighted span {
+  background-color: rgb(255, 255, 0);
+}

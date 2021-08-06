@@ -1,0 +1,11 @@
+.team-users-app {
+  width: 1280px;
+  max-width: 96.75%;
+  margin: 0 auto;
+  box-sizing: border-box;
+
+  @media screen and (min-width: '400px') and (max-width: '767px') {
+    width: 25rem;
+    margin: 0 auto;
+  }
+}

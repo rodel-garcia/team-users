@@ -1,0 +1,44 @@
+.filter-option {
+  padding: 0.5rem;
+  display: flex;
+
+  div {
+    display: flex;
+    margin-left: 0.5rem;
+    user-select: none;
+    align-items: center;
+    justify-content: center;
+
+    label {
+      cursor: pointer;
+    }
+    input {
+      height: 1rem;
+      width: 1rem;
+      margin: 0 0.25rem 0;
+      cursor: pointer;
+    }
+  }
+}
+
+.search-field {
+  display: flex;
+  flex: 1;
+  border: 1px solid #cccccc;
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+  box-sizing: border-box;
+
+  input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    line-height: 1.2rem;
+    padding-right: 0.25rem;
+  }
+
+  .search-icon {
+    height: auto;
+  }
+}
